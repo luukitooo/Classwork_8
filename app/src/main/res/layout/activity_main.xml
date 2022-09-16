@@ -21,4 +21,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center" />
 
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvNotFound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Items not found!"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:visibility="invisible" />
+
 </FrameLayout>

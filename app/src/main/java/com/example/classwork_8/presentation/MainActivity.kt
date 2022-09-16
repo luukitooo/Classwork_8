@@ -54,6 +54,9 @@ class MainActivity : AppCompatActivity() {
                 }
                 state.isLoading?.let {
                     binding.progressBar.isVisible = it
+                    if (!it) {
+                        binding.tvNotFound.isVisible = outfitAdapter.currentList.isEmpty()
+                    }
                 }
             }
         }
